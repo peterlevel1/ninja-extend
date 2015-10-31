@@ -4,7 +4,7 @@
   "description": "ninja code style for extending datas ",
   "main": "index.js",
   "scripts": {
-    "test": "node test-extend.js"
+    "test": "node ./test/test-extend.js"
   },
   "repository": {
     "type": "git",

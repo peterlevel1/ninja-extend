@@ -1,5 +1,5 @@
 var extend = typeof module !== 'undefined'
-	? require('./index.js')
+	? require('../index.js')
 	: this.extend;
 
 //----------------------------------------------
@@ -69,11 +69,12 @@ var obj = {
 };
 
 obj.extend({
+	sthToSay : 'Nice to meet you !',
 	say : function () {
-		return 'hello world';
+		return this.sthToSay;
 	}
 });
-console.log(obj.say() === 'hello world');
+console.log(obj.say() === 'Nice to meet you !');
 
 // deep extend a array, and save the src value
 var data = {
@@ -99,7 +100,6 @@ data = extend(true, data, {
 console.log(data.would.you === 'mind if I know your QQ || email || other contacts');
 console.log(data.would.youMindIf === 'leave me a contact of you, would\'nt you ?');
 
-
-console.log('the test is over, check the results');
+console.log('the test is over, check the results through console');
 console.log('make sure JS is running in ES5 mode');
-console.log('if there is an error, please let me know');
+console.log('if there is an false or error, please let me know');
