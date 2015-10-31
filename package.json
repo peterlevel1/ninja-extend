@@ -1,0 +1,26 @@
+{
+  "name": "ninja-extend",
+  "version": "1.0.0",
+  "description": "ninja code style for extending datas ",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test-extend.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/peterlevel1/ninja-extend.git"
+  },
+  "keywords": [
+    "don't",
+    "know",
+    "what",
+    "to",
+    "say"
+  ],
+  "author": "Peter",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/peterlevel1/ninja-extend/issues"
+  },
+  "homepage": "https://github.com/peterlevel1/ninja-extend"
+}
