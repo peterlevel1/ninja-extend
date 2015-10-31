@@ -1,5 +1,5 @@
 ;(function (global) {
-	(typeof define !== 'undefined' && define.amd && define(function () { return extend; })) ||
+	(typeof define !== 'undefined' && define.amd && !define(function () { return extend; })) ||
 	(typeof module !== 'undefined' && (module.exports = extend)) ||
 	(global.extend = extend);
 
@@ -28,11 +28,7 @@
 		target = typeof arguments[0] === 'boolean'
 			? ++index && arguments[1]
 			: arguments[0];
-
-		target = isObject(target) || typeof target === 'function'
-			? target
-			: {};
-
+		!(isObject(target) || typeof target === 'function') && (target = {});
 		arguments.length <= 1 && !(index = 0) && (target = this);
 
 		targetIsArray = Array.isArray(target);
